@@ -231,6 +231,10 @@ function showWelcome() {
     else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>🌙 晚上好，夜生活嗨起来！</span>";
     else timeChange = "夜深了，早点休息，少熬夜";
 
+    if (ip.includes(":")) {
+        ip = "<br>好复杂，咱看不懂~";
+    }
+
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
