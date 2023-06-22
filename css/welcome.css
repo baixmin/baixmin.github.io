@@ -1,7 +1,15 @@
+/* 公告栏信息ip */
 #welcome-info {
     overflow: hidden;
     border-radius: 14px;
     --musi-welcome-color: #49B1F5;
     --musi-ip-color: #49B1F5;
     --musi-gl-size: 16px!important;
+  }
+
+/* 文章顶部图模糊 */
+/* blur是模糊度，brightness是图片亮度 */
+#post-top-cover {
+  filter: blur(0px) brightness(80%)!important;
+  transform: rotate(0deg) translateY(0%) scale(1)!important;
   }
